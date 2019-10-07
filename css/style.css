@@ -1,0 +1,29 @@
+body{
+background-image: url(../fuentes/fondo.jpg);
+background-position-y: 80px;
+background-position-x: center;
+background-attachment: scroll;
+display: block;
+}
+.nav-link{
+font-family: 'Indie Flower', cursive;
+font-size: 20px;
+
+}
+.pepe{
+  background-color:rgba(69, 150, 136, 0.603);
+margin: 5%;
+padding: 5%;
+}
+footer{
+  color: aliceblue;
+  background-color:rgba(31, 113, 126, 0.8);
+  padding: 0%;
+align-content: center;
+align-self: center;
+overflow: hidden;
+position: absolute;
+text-align: center;
+font-family: 'Indie Flower', helvetica;
+font-size: 18px;
+}

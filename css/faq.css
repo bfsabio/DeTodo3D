@@ -1,0 +1,25 @@
+body{
+    background-image: url(../fuentes/fondo.jpg);
+    background-position-y: 80px;
+    background-position-x: center;
+    background-attachment: scroll;
+    }
+    .nav-link{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+
+    }
+      .container{
+            color:  #ffffff;
+            text-shadow: #FFFFFF;
+            font-family: 'Indie Flower', cursive;
+            font-size: 30px;
+            flex-direction: column;
+            position: relative;
+            text-align: center;
+            background-position: center;
+            margin-top: 5%;
+        width: 30%;
+        height: 70%;
+        background-color:rgba(31, 113, 126, 0.8);
+    }
