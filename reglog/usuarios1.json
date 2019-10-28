@@ -1,0 +1,22 @@
+{
+    "usuarios": [
+        {
+            "name": "pepe naba",
+            "email": "pepe@naba.com",
+            "username": "pepe",
+            "password": "b630990075e84cee4c130c4cd86f0e50"
+        },
+        {
+            "name": "modestro",
+            "email": "modesto@rosado.com",
+            "username": "md",
+            "password": "81dc9bdb52d04dc20036dbd8313ed055"
+        },
+        {
+            "name": "modestro",
+            "email": "modesto@rosado.com",
+            "username": "md",
+            "password": "81dc9bdb52d04dc20036dbd8313ed055"
+        }
+    ]
+}

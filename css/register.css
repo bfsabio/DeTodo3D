@@ -1,5 +1,5 @@
 body{
-    background-image: url(../fuentes/fondo.jpg);
+    background-image: url(../fuentes/imagenes/fondo.jpg);
     background-position-y: 80px;
     background-position-x: center;
     background-attachment: scroll;
@@ -11,12 +11,13 @@ body{
         }
     .box {
 
-        margin-top: 5%;
-        display: flex;
-        position: absolute;
-        width: 30%;
-        height: 70%;
-        background-color:rgba(31, 113, 126, 0.8);
+      margin-top: 5%;
+      margin-bottom:5%;
+      display: flex;
+      position: absolute;
+      width: 30%;
+      background-color:rgba(31, 113, 126, 0.8);
+
     }
     .container{
 
