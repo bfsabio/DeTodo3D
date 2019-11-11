@@ -12,10 +12,13 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <body>
-    <?php
-      $a=3;
-      include '../include/navbar.php';
-    ?>
+    <header>
+      <?php
+            $a=1;
+        include '../include/navbar.php';
+      
+        ?>
+    </header>
 
         <div class="container">
 
