@@ -36,10 +36,6 @@ if ($usuarioLogueado == null) {
           <p style= padding-top:20px;>destacado diseñador y buen armador de presupuesto.<p> -->
           <summary><label for="vendedor">¿que tipo de usuario quieres tener?</label></summary>
           <details>
-          <input type="checkbox" name="usuario" value="proveedor">Proveedor<p>medios de envio y materiales</P>
-          <br>
-          <input type="checkbox" name="usuario" value="prestador de servicio">Prestador de servicio<p>diseñador,impresión, reparación, insumos y otros.</p>
-          <br>
           <input type="checkbox" name="usuario" value="diseñador">Diseñador<p>modela y cobra por tiempo de modelado.</p>
           <br>
           <input type="checkbox" name="usuario" value="impresión">Impresión<p>programa, cobra por tiempo de impresión y consumo tipo de material.</p>
