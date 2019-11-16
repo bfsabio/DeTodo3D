@@ -35,7 +35,7 @@ if ($usuarioLogueado == null) {
           <p style= padding-top:20px;>contraseña:*******<p>
           <p style= padding-top:20px;>destacado diseñador y buen armador de presupuesto.<p> -->
           <summary><label for="vendedor">¿que tipo de usuario quieres tener?</label></summary>
-          <details>
+          <details>          
           <input type="checkbox" name="usuario" value="diseñador">Diseñador<p>modela y cobra por tiempo de modelado.</p>
           <br>
           <input type="checkbox" name="usuario" value="impresión">Impresión<p>programa, cobra por tiempo de impresión y consumo tipo de material.</p>
