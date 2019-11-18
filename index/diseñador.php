@@ -20,11 +20,14 @@
       <div class="row text-center">
 
         <div class="col-md-4">
-          <img src="" alt="Logo del diseñador" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
+          <img src="../fuentes/imagenes/modelado.jpg" alt="Logo del diseñador" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
         </div>
 
-        <div class="text-center col-md-8">
-          <h1> NOMBRE DEL DISEÑADOR </h1> <!-- PHP EMBEBIDO DONDE SE MUESTRE EL NOMBRE DE LA EMPRESA -->
+        <div class="text-center col-md-4 texto">
+          <h1> COOLMODEL3D </h1> <!-- PHP EMBEBIDO DONDE SE MUESTRE EL NOMBRE DE LA EMPRESA -->
+        </div>
+        <div class="col-md-4" align:right;>
+        <img src="../fuentes/imagenes/modelado.jpg" alt="Logo del diseñador" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
         </div>
 
       </div>
@@ -36,13 +39,13 @@
   <section id="descripcion">
     <div class="container col-md-12">
       <div class="row text-center">
-        <div class="col-md-12 descripcion">
-          <h2>ACERCA DEL DISEÑADOR:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
+        <div class="col-md-12 descripcion texto">
+          <h2>ACERCA DE COOLMODEL3D:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row text-center texto">
         <div class="col-md-12">
-            <p>Acá va embebido la descripcion de  diseñador <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p>COOLMODEL3D<br> Es una  estudio  que  realiza  modelado en 3D de todo  tipo de uso,  piezas, herramientas y ect.</p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
         </div>
     </div>
     </div>
@@ -55,23 +58,23 @@
         <div class="row text-center">
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="diseñador" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-            <p>Imagen de diseñaodr</p>
+          <img src="../fuentes/imagenes/modelado1.jpg" alt="diseñador" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+    
         </div>
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="diseñador" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-          <p>Imagen de diseñaodr</p>
+          <img src="../fuentes/imagenes/modelado2.jpg" alt="diseñador" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+  
         </div>
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="diseñador" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-          <p>Imagen de diseñaodr</p>
+          <img src="../fuentes/imagenes/modelado3.jpg" alt="diseñador" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+  
         </div>
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="diseñador" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-          <p>Imagen de diseñaodr</p>
+          <img src="../fuentes/imagenes/modelado4.png" alt="diseñador" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+  
         </div>
 
         </div>
