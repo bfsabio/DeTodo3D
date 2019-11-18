@@ -45,7 +45,7 @@
       </div>
       <div class="row text-center texto">
         <div class="col-md-12">
-            <p>COOLMODEL3D<br> Es una  estudio  que  realiza  modelado en 3D de todo  tipo de uso,  piezas, herramientas y ect.</p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p>COOLMODEL3D<br> Es un estudio  que  realiza  modelado en 3D de todo  tipo de uso,  piezas, herramientas y ect.</p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
         </div>
     </div>
     </div>
