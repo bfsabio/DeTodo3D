@@ -40,7 +40,7 @@
     <div class="container col-md-12">
       <div class="row text-center">
         <div class="col-md-12 descripcion texto">
-          <h2>RIOT3D SE ESPECIALIZA COMO PROVEEDOR  EN:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
+          <h2>SE ESPECIALIZA COMO PROVEEDOR  EN:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
         </div>
       </div>
       <div class="row text-center texto">

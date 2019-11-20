@@ -20,11 +20,15 @@
       <div class="row text-center">
 
         <div class="col-md-4">
-          <img src="" alt="Logo del impresor" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
+          <img src="../fuentes/imagenes/impresion3Dpro.png" alt="Logo del impresor" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
         </div>
 
-        <div class="text-center col-md-8">
-          <h1> NOMBRE DEL IMPRIMIDOR </h1> <!-- PHP EMBEBIDO DONDE SE MUESTRE EL NOMBRE DE LA EMPRESA -->
+        <div class="text-center col-md-4 texto">
+          <h1> IMPRESIÓN3DPRO </h1> <!-- PHP EMBEBIDO DONDE SE MUESTRE EL NOMBRE DE LA EMPRESA -->
+        </div>
+
+        <div class="col-md-4">
+          <img src="../fuentes/imagenes/impresion3Dpro.png" alt="Logo del impresor" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
         </div>
 
       </div>
@@ -36,13 +40,13 @@
   <section id="descripcion">
     <div class="container col-md-12">
       <div class="row text-center">
-        <div class="col-md-12 descripcion">
-          <h2>ACERCA DEL IMPRIMIDOR:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
+        <div class="col-md-12 descripcion texto">
+          <h2>NOS ESPECIALIZAMOS EN:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row text-center texto">
         <div class="col-md-12">
-            <p>Acá va embebido la descripcion de imprimidor <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p>En impresiónes con filamento Pla, Flex, Pla max y nylon6.<p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
         </div>
     </div>
     </div>
@@ -55,23 +59,23 @@
         <div class="row text-center">
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="impresion" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-            <p>Imagen de piezas  impresas</p>
+          <img src="../fuentes/imagenes/impresion.jpg" alt="impresion" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+
         </div>
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="impresion" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-          <p>Imagen de piezas  impresas</p>
+          <img src="../fuentes/imagenes/impresion2.jpg" alt="impresion" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+
         </div>
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="impresion" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-          <p>Imagen de piezas impresas</p>
+          <img src="../fuentes/imagenes/impresion3.jpg" alt="impresion" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+
         </div>
 
         <div class="col-md-3 imagenes">
-          <img src="" alt="impresion" width="90" height="90">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
-          <p>Imagen de pieza impresas</p>
+          <img src="../fuentes/imagenes/impresion4.jpg" alt="impresion" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->
+
         </div>
 
         </div>
