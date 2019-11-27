@@ -36,15 +36,15 @@ if ($usuarioLogueado == null) {
           <p style= padding-top:20px;>destacado diseñador y buen armador de presupuesto.<p> -->
           <summary><label for="vendedor">¿que tipo de usuario quieres tener?</label></summary>
           <details>
-          <input type="checkbox" name="usuario" value="diseñador">Diseñador<p>modela y cobra por tiempo de modelado.</p>
+          <img src="../fuentes/imagenes/diseño.png" alt="Logo del diseñador" class="img-fluid"><br><input type="checkbox" name="usuario" value="diseñador">Diseñador<p>modela y cobra por tiempo de modelado.</p>
           <br>
-          <input type="checkbox" name="usuario" value="impresión">Impresión<p>programa, cobra por tiempo de impresión y consumo tipo de material.</p>
+          <img src="../fuentes/imagenes/impresion.png" alt="Logo del impresión" class="img-fluid"><br><input type="checkbox" name="usuario" value="impresión">Impresión<p>programa, cobra por tiempo de impresión y consumo tipo de material.</p>
           <br>
-          <input type="checkbox" name="usuario" value="reparación">Reparación<p>mano de obra, delivery y pieza de reparación.</p>
+          <img src="../fuentes/imagenes/reparacion.png" alt="Logo del reparacion" class="img-fluid"><br><input type="checkbox" name="usuario" value="reparación">Reparación<p>mano de obra, delivery y pieza de reparación.</p>
           <br>
-          <input type="checkbox" name="usuario" value="insumos">Insumos<p>materiales,repuestos y envios.</p>
+          <img src="../fuentes/imagenes/insumos.png" alt="Logo del insumos" class="img-fluid"><br><input type="checkbox" name="usuario" value="insumos">Insumos<p>materiales,repuestos y envios.</p>
           <br>
-          <input type="checkbox" name="usuario" value="otros">Otros<p>futuros servicios dentro de la programación 3D.</p>
+          <img src="../fuentes/imagenes/otros.png" alt="Logo del Otros" class="img-fluid"><br><input type="checkbox" name="usuario" value="otros">Otros<p>futuros servicios dentro de la programación 3D.</p>
           </details>
 
           <summary><label for="vendedor">¿que tipo de exposición quieres tener?</label></summary>
@@ -57,6 +57,12 @@ if ($usuarioLogueado == null) {
           </details>
 
           </ul>
+      </div>
+      <div class="ml-auto texto">
+      <ul align="center">
+        <a href="perfil.php"><input type="submit" value="volver" class="btn-form"><a><br>
+      	<a href="confirmaperfil.php"><input type="submit" value="Enviar" class="btn-form">
+      </ul>
       </div>
 </body>
 </html>
