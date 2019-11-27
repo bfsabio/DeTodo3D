@@ -44,9 +44,9 @@
           <h2>NOS ESPECIALIZAMOS EN:</h2>  <!-- PHP EMBEBIDO NOMBRE EMPRESA -->
         </div>
       </div>
-      <div class="row text-center texto">
+      <div class="row text-center">
         <div class="col-md-12">
-            <p>En impresiónes con filamento Pla, Flex, Pla max y nylon6.<p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p class="texto">En impresiónes con filamento Pla, Flex, Pla max y nylon6.<p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
         </div>
     </div>
     </div>

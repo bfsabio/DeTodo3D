@@ -27,7 +27,7 @@ if ($usuarioLogueado == null) {
 </head>
 <body>
 <div class="parrafo">
-      <div class="ml-auto texto">
+      <div class="ml-auto">
           <ul align="center">
           <img src="../fuentes/imagenes/login.png" alt="icono menu" width="100">
           <!-- <p style= padding-top:20px;>Braian Sabio</p>

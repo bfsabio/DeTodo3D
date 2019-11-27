@@ -16,7 +16,7 @@
       <?php
             $a=1;
         include '../include/navbar.php';
-      
+
         ?>
     </header>
 

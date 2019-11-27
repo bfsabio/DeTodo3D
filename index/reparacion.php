@@ -46,7 +46,7 @@
       </div>
       <div class="row text-center texto">
         <div class="col-md-12">
-            <p>Reparación de impresoras, calibración, Reparación de circuitos & Cotización sin costo.<br> </p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p class="texto">Reparación de impresoras, calibración, Reparación de circuitos & Cotización sin costo.<br> </p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
         </div>
     </div>
     </div>

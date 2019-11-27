@@ -45,7 +45,7 @@
       </div>
       <div class="row text-center texto">
         <div class="col-md-12">
-            <p>todo lo que tenga que ver insumos para la impresión, nozel,filamentos,motores y etc.<br> </p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p class="texto">todo lo que tenga que ver insumos para la impresión, nozel,filamentos,motores y etc.<br> </p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
         </div>
     </div>
     </div>
