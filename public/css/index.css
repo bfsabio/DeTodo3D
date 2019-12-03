@@ -1,0 +1,30 @@
+body{
+/* background-image: url(https://1.bp.blogspot.com/-xT0CRF_AuTE/XdWMcKTo10I/AAAAAAAAd9c/XTYWNM7nymw_sjusWqUQzhZ30nEZrdHaQCNcBGAsYHQ/s1600/fondo.jpg); */
+background-position-y: 70px;
+background-position-x: center;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: contain;
+}
+.nav-link{
+font-family: 'Indie Flower', cursive;
+font-size: 20px;
+
+}
+.pepe{
+  background-color:rgba(31, 113, 126, 0.8);
+margin: 5%;
+padding: 5%;
+}
+footer{
+  color: aliceblue;
+  background-color:rgba(31, 113, 126, 0.8);
+  padding: 0%;
+align-content: center;
+align-self: center;
+overflow: hidden;
+position: absolute;
+text-align: center;
+font-family: 'Indie Flower', helvetica;
+font-size: 18px;
+}

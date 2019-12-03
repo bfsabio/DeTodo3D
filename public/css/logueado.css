@@ -1,0 +1,60 @@
+body {
+  background-image: url(https://1.bp.blogspot.com/-xT0CRF_AuTE/XdWMcKTo10I/AAAAAAAAd9c/XTYWNM7nymw_sjusWqUQzhZ30nEZrdHaQCNcBGAsYHQ/s1600/fondo.jpg);
+  background-position-y: 70px;
+  background-position-x: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  /* text-decoration: none; */
+}
+.dropdown {
+  position: absolute;
+  display: flex;
+}
+
+.dropbtn
+{
+  background-color: black;/* #4CAF50;*/
+  color: black;
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #908E8E
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+/*esto determina el color de seleccion de item en menu cuando se pasa el puntero*/
+.dropdown:hover .dropbtn {
+ background-color: #ADACAC;
+}
+.nav-link{
+font-family: 'Indie Flower', cursive;
+font-size: 20px;
+}
+.menu a {
+color:black;
+  font-size: 20px;
+}

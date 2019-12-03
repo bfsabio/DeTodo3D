@@ -1,0 +1,36 @@
+.bcontain{
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.textbanner{
+position: relative;
+top: -50px; /*  50px 4.6%  */
+text-align: center;
+width: 150px;
+
+}
+.banner{
+  padding-top: 0.8%;  /*10px  0.8% */
+  border: 0px;
+  border-style: outset;
+  width: 12.5% ;   /*150px --12.5%  1200*/
+  height: 12.5%;
+}
+.banner figure {
+	background: #55bc19;
+  width: 94%;
+  height: 94%;
+}
+.banner figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.banner figure:hover img {
+	opacity: .5;
+}
+.text{
+text-align: center;
+top: 1.25%;/* 15px 1.25% */
+
+}
