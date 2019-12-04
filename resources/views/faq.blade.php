@@ -3,60 +3,33 @@
   <head>
       <title>Faqs</title>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="<?php echo asset('css/faq.css')?>" type="text/css">
+      <link rel="stylesheet" href="{{  asset('css/faq.css') }}" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+      <link rel="stylesheet" href="{{  asset('css/navbar.css') }}" type="text/css">
+      <link rel="stylesheet" href="{{  asset('css/logueado.css') }}" type="text/css">
   <body>
     <header>
-      {{-- <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->
           @guest
-              <li class="nav-item">
-                  <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-              </li>
-              @if (Route::has('register'))
-                  <li class="nav-item">
-                      <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                  </li>
-              @endif
+            @include('navbar');
           @else
-              <li class="nav-item dropdown">
-                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                      {{ Auth::user()->name }} <span class="caret"></span>
-                  </a>
-
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{ route('logout') }}"
-                         onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">
-                          {{ __('Logout') }}
-                      </a>
-
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                          @csrf
-                      </form>
-                  </div>
-              </li>
+            @include('logueado');
           @endguest
-      </ul> --}}
-      @include('navbar');
-
     </header>
-
         <div class="container">
-
         <details>
         <summary>¿Cual es el compromiso del proyecto?</summary>
              <p>Proyectamos crear una comunidad de colaboración mutua destinada a todo tipo de asistencias y manufacturas necesarias, en la impresión 3D. Debido a la ascendencia a fabricar y crear resoluciones de las mismas, la comunidad  necesitaba de un sitio completo de comercialización,  transacción & el  impulso de servicios orientado a suplir las necesidades que el sector demanda.</p>
         </details>
         <details>
         <summary>¿Como  registrarse?</summary>
-             <p>Haga click en el botón registrarse que esta en la barra  de navegación & inicio, complete los  campos  con sus datos  y  cklikea enviar.</p>
+             <p>Haga click en el botón registrarse que esta en la barra  de navegación, complete los  campos  con sus datos  y hacer click en enviar.</p>
         </details>
         <details>
         <summary>¿Puedo hacer una pieza a partir de fotografías?</summary>
