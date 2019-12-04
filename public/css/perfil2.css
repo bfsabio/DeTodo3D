@@ -1,0 +1,78 @@
+body{
+background-image: url(../fuentes/imagenes/fondo.jpg);
+background-position-y: 80px;
+background-position-x: center;
+background-attachment: scroll;
+display: block;
+}
+#datos .container {
+    background-color: rgba(31, 113, 126, 0.5);
+  }
+  .container{
+padding: 2.5%;
+
+
+  }
+
+#descripcion .container{
+  background-color: rgba(31, 113, 126, 0.5)
+}
+#imagenes .imagenes{
+  background-color: white;
+}
+.nav-link{
+font-family: 'Indie Flower', cursive;
+font-size: 20px;
+
+}
+.pepe{
+  background-color:rgba(31, 113, 126, 0.8);
+margin: 5%;
+padding: 5%;
+}
+.texto{
+  color:white;
+}
+footer{
+  color: aliceblue;
+  background-color:rgba(31, 113, 126, 0.8);
+  padding: 0%;
+align-content: center;
+align-self: center;
+overflow: hidden;
+position: absolute;
+text-align: center;
+font-family: 'Indie Flower', helvetica;
+font-size: 18px;
+}
+#wrap{
+  margin: 0 auto;
+  width: 500px;
+}
+details{
+  border: 1px solid #CC0;
+  padding: 5px;
+  font-family:'Sawarabi Mincho', sans-serif;
+  margin-bottom:  30px;
+  width:1110px;
+  background-color: #EEE;
+}
+summary{
+  font-weight: bold;
+  color: SteelBlue;
+  font-size: 12px;
+  cursor: pointer;
+}
+p, a, span{
+  font-size: 12px;
+  color: #666;
+}
+details summary::-webkit-details-marker {
+  color: #CC0;
+}
+h2{
+  color: #FFF;
+  font-size: 40px;
+  font-family: Helvetica;
+  text-align: center;
+}

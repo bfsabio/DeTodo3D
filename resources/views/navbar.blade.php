@@ -4,7 +4,6 @@
     <title>DeTodo3D</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="<?php echo asset('css/navbar.css')?>" type="text/css">
-
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,11 +24,6 @@
             <li class="nav-item"><a class="nav-link @if(Request::is('login'))disabled @endif" href="login">Ingresar <span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link @if(Request::is('register'))disabled @endif" href="register">Registrarse</a></li>
             <li class="nav-item"><a class="nav-link @if(Request::is('faq'))disabled @endif" href="faq">Faq</a></li>
-            <li class="nav-item"><a class="nav-link @if(Request::is('inicio'))disabled @endif" href="inicio">*</a></li>
-
-
-
-
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

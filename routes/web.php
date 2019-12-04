@@ -23,6 +23,22 @@ Route::patch('/user/{user}/update',"UserController@update")->name('user.update')
 Route::get('perfil2', function () {
     return view('perfil2');
 });
+Route::get('diseño', function () {
+    return view('diseñador');
+});
+Route::get('impresion', function () {
+    return view('impresion');
+});
+Route::get('reparacion', function () {
+    return view('reparacion');
+});
+Route::get('insumos', function () {
+    return view('insumos');
+});
+Route::get('otros', function () {
+    return view('otros');
+});
+
 //
 // Route::get('logout', function () {
 //     // return view('welcome');

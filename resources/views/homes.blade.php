@@ -24,8 +24,8 @@
   @include('navbar')
 </header>
 
-  <div class="d-flex justify-content-center" style="margin-top:30px;">
-  <iframe src="https://www.google.com/maps/d/embed?mid=1OEqtt7FTnLyp8X1RKNGpOqzwdHGq5Z_a" width="740" height="580"></iframe>
+  <div class="d-flex justify-content-center" style="margin:25px;">
+  <iframe src="https://www.google.com/maps/d/embed?mid=1OEqtt7FTnLyp8X1RKNGpOqzwdHGq5Z_a" width="740" height="440"></iframe>
   </div>
 
 
@@ -35,5 +35,8 @@
   <canvas class="runner-canvas" width="552" height="150" style="width: 552px; height: 150px;">
   </canvas>
 </div> -->
+<footer>
+  <p>Proyectamos crear una comunidad de colaboración mutua destinada a todo tipo de asistencias y manufacturas necesarias, en la impresión 3D. Debido a la ascendencia a fabricar y crear resoluciones de las mismas, la comunidad  necesitaba de un sitio completo de comercialización,  transacción & el  impulso de servicios orientado a suplir las necesidades que el sector demanda.</p>
+</footer>
 </body>
 </html>
