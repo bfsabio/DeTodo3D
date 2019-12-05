@@ -1,0 +1,15 @@
+@extends('layouts.app')
+@include('logueado')
+@if(Request::is('diseño'))
+@include('sDiseñador')
+@elseif(Request::is('impresion'))
+@include('sImpresion')
+@elseif(Request::is('reparacion'))
+@include('sReparacion')
+@elseif(Request::is('insumos'))
+@include('sInsumos')
+@elseif(Request::is('otros'))
+@include('sConsejos')
+@endif
+@section('content')
+@endsection

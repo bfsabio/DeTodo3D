@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>DeTodo3D</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -19,7 +18,6 @@
       <form method="POST" action="{{ route('user.update',$user) }}">
           @csrf
           @method("PATCH")
-
           <div class="form-group row">
               <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
@@ -190,8 +188,7 @@
 <div class="row text-center">
 <details>
 <summary>¿cambiar a cuenta profecional?</summary>
-<a href="selecciondeclase.php">haga click aqui.<a>
-
+<li>si desea crear un perfil profecional pongase en contacto realzando <a href="selecciondeclase.php">click aqui.<a> </li>
 <!-- <tr>
         <td><img src="" width="200" height="200" align="right"/></td>
         <td><img src="" width="200" height="200" align="right"/></td>

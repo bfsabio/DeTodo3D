@@ -6,16 +6,13 @@ background-attachment: scroll;
 display: block;
 }
 #datos .container {
-    background-color: rgba(31, 113, 126, 0.5);
-  }
-  .container{
+background-color: rgba(31, 113, 126, 0.5);
+}
+.container{
 padding: 2.5%;
-
-
-  }
-
+}
 #descripcion .container{
-  background-color: rgba(31, 113, 126, 0.5)
+background-color: rgba(31, 113, 126, 0.5)
 }
 #imagenes .imagenes{
   background-color: white;
@@ -23,15 +20,21 @@ padding: 2.5%;
 .nav-link{
 font-family: 'Indie Flower', cursive;
 font-size: 20px;
-
 }
 .pepe{
-  background-color:rgba(31, 113, 126, 0.8);
+background-color:rgba(31, 113, 126, 0.7);
 margin: 5%;
 padding: 5%;
 }
 .texto{
   color:white;
+}
+.texto li{
+font-size: 28px;
+}
+.texto p{
+  font-size: 25px;
+  color: white;
 }
 footer{
   color: aliceblue;
@@ -44,4 +47,38 @@ position: absolute;
 text-align: center;
 font-family: 'Indie Flower', helvetica;
 font-size: 18px;
+}
+#wrap{
+  margin: 0 auto;
+  width: 500px;
+}
+details{
+  border: 1px solid #CC0;
+  padding: 5px;
+  font-family:'Sawarabi Mincho', sans-serif;
+  margin-bottom:  30px;
+  width:1110px;
+  background-color: #EEE;
+}
+summary{
+  font-weight: bold;
+  color: SteelBlue;
+  font-size: 12px;
+  cursor: pointer;
+}
+p, a, span{
+  font-size: 18px;
+  color: #666;
+}
+details summary::-webkit-details-marker {
+  color: #CC0;
+}
+h2{
+  color: #FFF;
+  font-size: 40px;
+  font-family: Helvetica;
+  text-align: center;
+}
+.imagenes{
+  padding: 15px;
 }

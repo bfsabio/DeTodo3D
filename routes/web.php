@@ -24,19 +24,19 @@ Route::get('perfil2', function () {
     return view('perfil2');
 });
 Route::get('diseño', function () {
-    return view('diseñador');
+    return view('servicio');
 });
 Route::get('impresion', function () {
-    return view('impresion');
+    return view('servicio');
 });
 Route::get('reparacion', function () {
-    return view('reparacion');
+    return view('servicio');
 });
 Route::get('insumos', function () {
-    return view('insumos');
+    return view('servicio');
 });
 Route::get('otros', function () {
-    return view('otros');
+    return view('servicio');
 });
 
 //
