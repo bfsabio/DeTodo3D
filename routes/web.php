@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('faq', function () {
     return view('faq');
 });
+Route::get('/user/faq', function () {
+    return view('faq');
+});
 Route::get('/user/edit',"UserController@edit");
 Route::patch('/user/{user}/update',"UserController@update")->name('user.update');
 Route::get('perfil2', function () {
