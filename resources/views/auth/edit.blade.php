@@ -125,7 +125,7 @@
   <div class="row text-center">
   <details>
     <summary>¿cambiar a cuenta profesional?</summary>
-    <li>si desea crear un perfil profesional pongase en contacto realzando <a href="selecciondeclase.php">click aqui.<a> </li>
+    <li>si desea crear un perfil profesional pongase en contacto realzando <a href="selecciondeclase">click aqui.<a> </li>
 
   </details>
 

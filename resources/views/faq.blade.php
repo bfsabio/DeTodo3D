@@ -14,13 +14,14 @@
       <link rel="stylesheet" href="{{  asset('css/logueado.css') }}" type="text/css">
   <body>
     <header>
-      <ul class="navbar-nav ml-auto">
+
           <!-- Authentication Links -->
           @guest
             @include('navbar');
           @else
             @include('logueado');
           @endguest
+          </ul>
     </header>
         <div class="container">
         <details>

@@ -9,7 +9,7 @@
     font-size: 20px;
 left: 10px;   }
       .container{
-        color:  #ffffff;
+      
         text-shadow: #FFFFFF;
         font-family: url('https://fonts.googleapis.com/css?family=Nunito');
         font-size: 30px;
@@ -23,6 +23,13 @@ left: 10px;   }
         width: 30%;
         height: 70%;
         background-color:rgba(31, 113, 126, 0.8);
+    }
+    .selectclace{
+      width: 100%;
+    }
+    .selectclace details input{
+
+      font-size:15px;
     }
     <style>
     #wrap{

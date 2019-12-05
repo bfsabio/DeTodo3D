@@ -21,6 +21,9 @@ Route::get('faq', function () {
 Route::get('/user/faq', function () {
     return view('faq');
 });
+Route::get('/user/selecciondeclase', function () {
+    return view('selecciondeclase');
+});
 Route::get('/user/edit',"UserController@edit");
 Route::patch('/user/{user}/update',"UserController@update")->name('user.update');
 Route::get('perfil2', function () {
