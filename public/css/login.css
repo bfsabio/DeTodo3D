@@ -11,7 +11,6 @@
 
         } */
         .box {
-
             /* padding: 5%; */
             margin-top: 5%;
             margin-bottom: 5%;
@@ -25,7 +24,7 @@
         .container{
               color: black;
               text-shadow: #FFFFFF;
-              font-family: 'Indie Flower', cursive;
+              font-family:url('https://fonts.googleapis.com/css?family=Nunito');
               font-size: 30px;
               flex-direction: column;
               position: relative;

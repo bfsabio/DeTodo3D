@@ -18,7 +18,7 @@ background-color: rgba(31, 113, 126, 0.5)
   background-color: white;
 }
 .nav-link{
-font-family: 'Indie Flower', cursive;
+font-family:url('https://fonts.googleapis.com/css?family=Nunito');
 font-size: 20px;
 }
 .pepe{
@@ -45,7 +45,7 @@ align-self: center;
 overflow: hidden;
 position: absolute;
 text-align: center;
-font-family: 'Indie Flower', helvetica;
+font-family:url('https://fonts.googleapis.com/css?family=Nunito');
 font-size: 18px;
 }
 #wrap{
@@ -55,7 +55,7 @@ font-size: 18px;
 details{
   border: 1px solid #CC0;
   padding: 5px;
-  font-family:'Sawarabi Mincho', sans-serif;
+  font-family:url('https://fonts.googleapis.com/css?family=Nunito');
   margin-bottom:  30px;
   width:1110px;
   background-color: #EEE;
@@ -76,7 +76,7 @@ details summary::-webkit-details-marker {
 h2{
   color: #FFF;
   font-size: 40px;
-  font-family: Helvetica;
+  font-family:url('https://fonts.googleapis.com/css?family=Nunito');
   text-align: center;
 }
 .imagenes{

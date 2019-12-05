@@ -11,7 +11,7 @@ left: 10px;   }
       .container{
         color:  #ffffff;
         text-shadow: #FFFFFF;
-        font-family: 'Sawarabi Mincho', sans-serif;
+        font-family: url('https://fonts.googleapis.com/css?family=Nunito');
         font-size: 30px;
         padding-top: 10px;
         padding-bottom: 1px;

@@ -7,12 +7,9 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 .nav-link{
-font-family: 'Indie Flower', cursive;
+font-family:url('https://fonts.googleapis.com/css?family=Nunito');
 font-size: 20px;
-
 }
-
-
 .dropdown-menu {
     /* position: absolute; */
     top: 100%;
@@ -27,24 +24,17 @@ font-size: 20px;
     text-align: center;
     list-style: none;
     /* background-color: #6b6b6b; */
-
 }
-
-
 .dropnab{
-  font-family: 'Indie Flower', cursive;
+  font-family:url('https://fonts.googleapis.com/css?family=Nunito');
   font-size: 20px;
   color: #ffffff;
   background-color: #6b6b6b;
-
-
 }
 .dropdown {
   position: relative;
   /* text-decoration: none; */
 }
-
-
 .dropdown-menu .sub-menu {
   padding: 1px 1px;
   overflow:  hidden;
@@ -54,7 +44,7 @@ font-size: 20px;
   visibility: hidden;
   /* margin-top: 0px; */
   box-shadow:  rgba(0,0,0,0.2);
-  font-family: 'Indie Flower', cursive;
+  font-family: url('https://fonts.googleapis.com/css?family=Nunito');
   font-size: 20px;
   color: rgb(12, 11, 11);
     /* text-decoration: none; */
@@ -65,20 +55,14 @@ font-size: 20px;
   text-align: left;
   /* opacity: 0.8; */
 }
-
 .dropdown-menu li:hover .sub-menu {
   visibility: visible;
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
   text-decoration: none;
 
 }
-
-
-
-
 .sub-menu:before {
     border-bottom: 7px solid transparent;
     border-left: none;
@@ -87,7 +71,6 @@ font-size: 20px;
     left: -7px;
     /* top: 10px; */
     text-decoration: none;
-
 }
 .sub-menu:after {
     border-top: 6px solid transparent;
@@ -98,10 +81,7 @@ font-size: 20px;
     top: 11px;
     left: -6px;
     text-decoration: none;
-
 }
-
-
 .avatar{
   vertical-align: middle;
    width:50px;
@@ -118,12 +98,10 @@ font-size: 20px;
   cursor: pointer;
   opacity: 0.5;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -132,16 +110,15 @@ font-size: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.dropdown-content a:hover {background-color: #908E8E}
-
+.dropdown-content a:hover {
+  background-color: #908E8E
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }

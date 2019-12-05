@@ -6,11 +6,10 @@
 
     } */
     .nav-link{
-        font-family: 'Indie Flower', cursive;
+        font-family:url('https://fonts.googleapis.com/css?family=Nunito');
         font-size: 20px;
         }
     .box {
-
       margin-top: 5%;
       margin-bottom:5%;
       display: flex;
@@ -20,9 +19,8 @@
 
     }
     .container{
-
         color:  #ffffff;
-        font-family: 'Indie Flower', cursive;
+        font-family: url('https://fonts.googleapis.com/css?family=Nunito');
         font-size: 28px;
         flex-direction: column;
         position: relative;

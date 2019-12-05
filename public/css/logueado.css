@@ -5,7 +5,7 @@ body {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Indie Flower', cursive;
+  font-family:url('https://fonts.googleapis.com/css?family=Nunito');
   font-size: 20px;
   /* text-decoration: none; */
 }
@@ -41,17 +41,15 @@ body {
 .dropdown-content a:hover {
   background-color: #908E8E
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 /*esto determina el color de seleccion de item en menu cuando se pasa el puntero*/
 .dropdown:hover .dropbtn {
  background-color: #ADACAC;
 }
 .nav-link{
-font-family: 'Indie Flower', cursive;
+font-family:url('https://fonts.googleapis.com/css?family=Nunito');
 font-size: 20px;
 }
 .menu a {
