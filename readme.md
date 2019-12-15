@@ -4,4 +4,3 @@ En este repositorio se encuentra la pagina realizada de manera grupal.
 realizado en el curso de programacion web que viene de parte de digital house y la fundacion formar.
 Adrian López
 Braian Sabio
-Franco Ojeda
