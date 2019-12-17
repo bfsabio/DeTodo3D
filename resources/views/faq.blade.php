@@ -14,7 +14,6 @@
       <link rel="stylesheet" href="{{  asset('css/logueado.css') }}" type="text/css">
   <body>
     <header>
-
           <!-- Authentication Links -->
           @guest
             @include('navbar');
