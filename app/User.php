@@ -8,6 +8,21 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+
+  const PAIS_ARGENTINA ="Ar";
+  const PAIS_BRASIL ="Br";
+  const PAIS_COLOMBIA="Co";
+  const PAIS_FRANCIA="Fr";
+  const PAIS_BOLIVIA="Bo";
+  const PAIS_CHILE="Ch";
+  const PAIS_PARAGUAY="Par";
+  const PAIS_VENEZUELA="Ve";
+  const PAIS_PERU="Pe";
+  const PAIS_URUGUAY="Ur";
+  const PAIS_ECUADOR="Ec";
+
+
+
     use Notifiable;
 
     /**
@@ -15,9 +30,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    protected $fillable = ['name','email','password','pais', 'telefono'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -36,4 +49,27 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function posteos(){
+      return $this->hasMany('App\Posteo');//,'posteos','user_id','id');
+  }
+
+  public function guardarImg(Request $request,$destino){
+    $request->file('img')->store('public/'.$destino);
+  }
+  public static function getPaises(){
+    return [
+      self::PAIS_ARGENTINA=> "ARGENTINA",
+      self::PAIS_BRASIL=> "BRASIL",
+      self::PAIS_COLOMBIA=> "COLOMBIA",
+      self::PAIS_FRANCIA=> "FRANCIA",
+      self::PAIS_BOLIVIA=> "BOLIVIA",
+      self::PAIS_CHILE=> "CHILE",
+      self::PAIS_PARAGUAY=> "PARAGUAY",
+      self::PAIS_VENEZUELA=> "VENEZUELA",
+      self::PAIS_PERU=> "PERU",
+      self::PAIS_URUGUAY=> "URUGUAY",
+      self::PAIS_ECUADOR=> "ECUADOR"
+    ];
+  }
 }

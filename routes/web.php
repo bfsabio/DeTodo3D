@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', function () {
     return view('homes'); // return view('welcome');
@@ -44,7 +44,11 @@ Route::get('insumos', function () {
 Route::get('otros', function () {
     return view('servicio');
 });
-
+Route::get('registrar',function(){
+  $paises= App\User::getPaises();
+  return view('auth.register',['paises'=>$paises]);
+});
+Auth::routes();
 //
 // Route::get('logout', function () {
 //     // return view('welcome');
@@ -56,10 +60,7 @@ Route::get('otros', function () {
 //     return view('login');
 // });
 //
-// Route::get('register', function () {
-//     // en esta ruta register
-//     return view('register');
-// });
+
 //
 //
 // Route::get('inicio', function () {
