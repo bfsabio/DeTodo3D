@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link @if(Request::is('login'))disabled @endif" href="login">Ingresar <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link @if(Request::is('register'))disabled @endif" href="register">Registrarse</a></li>
+            <li class="nav-item"><a class="nav-link @if(Request::is('register'))disabled @endif" href="registrar">Registrarse</a></li>
             <li class="nav-item"><a class="nav-link @if(Request::is('faq'))disabled @endif" href="faq">Faq</a></li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
