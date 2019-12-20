@@ -21,10 +21,14 @@ class UserController extends Controller
     $this->validate($request,[
         'name' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'cod_pais' => ['required', 'string', 'confirmed'],
+        'telefono' => ['required', 'string', 'confirmed'],
         'password' => ['required', 'string', 'min:8', 'confirmed'],
     ]);
     $user->name=$request["name"];
     $user->email=$request["email"];
+    $user->cod_pais=$request["cod_pais"];
+    $user->telefono=$request["telefono"];
     $user->password=$request["password"];
     $user->save();
     return view("home");

@@ -35,7 +35,7 @@
                                 <label for="pais" class="col-md-4 col-form-label text-md-right">{{ __('Pais') }}</label>
                                 <div class="col-md-6">
                                     <!-- <input id="pais" type="text" class="form-control @error('name') is-invalid @enderror" name="pais" value="{{ old('pais') }}" required autocomplete="pais" autofocus> -->
-                                    <select name="pais" id="cod_pais">
+                                    <select name="cod_pais" id="cod_pais">
                                         @foreach ($paises ?? '' as $cod_pais => $pais)
                                             <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
                                         @endforeach
