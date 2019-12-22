@@ -39,7 +39,6 @@
       </div>
     </div>
     </section>
-
     <!-- DESCRIPCION DE LA EMPRESA -->
   <br><br>
   <section id="datos">
@@ -53,8 +52,7 @@
           <form method="POST" action="{{ route('user.update',$user) }}">
               @csrf
               @method("PATCH")
-
-              <div class="form-group row">
+              <div class="form-group row">  <!-- name -->
                   <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                   <div class="col-md-6">
@@ -67,8 +65,7 @@
                       @enderror
                   </div>
               </div>
-
-              <div class="form-group row">
+              <div class="form-group row"> <!-- email -->
                   <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                   <div class="col-md-6">
@@ -81,8 +78,18 @@
                         @enderror
                   </div>
               </div>
-
-              <div class="form-group row">
+              <div class="form-group row"> <!-- Telefono -->
+                      <label for="telefono" class="col-md-4 col-form-label text-md-right">{{ __('Telefono') }}</label>
+                      <div class="col-md-6">
+                          <input id="telefono" type="text" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" required autocomplete="telefono" autofocus>
+                          @error('telefono')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                      </div>
+              </div>
+              <div class="form-group row"> <!-- password -->
                   <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                   <div class="col-md-6">
@@ -95,16 +102,14 @@
                         @enderror
                   </div>
               </div>
-
-              <div class="form-group row">
+              <div class="form-group row"> <!-- confirm-password -->
                   <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                   <div class="col-md-6">
                       <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                   </div>
               </div>
-
-              <div class="form-group row mb-0">
+              <div class="form-group row mb-0"> <!-- submit -->
                   <div class="col-md-6 offset-md-4">
                       <button type="submit" class="btn btn-primary">
                           {{ __('Register') }}
@@ -113,7 +118,6 @@
               </div>
           </form>
       </div>
-
     </div>
   </div>
   </section>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostTable extends Migration
+class CreateUserServicioTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreatePostTable extends Migration
      */
     public function up()
     {
-        Schema::create('post', function (Blueprint $table) { //esta tabla hace referencia al posteo del usuario
+        Schema::create('user_servicio', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->text('descripcion');
             $table->foreign('user_id')->reference('id')->on('users');   //se crea columna user id referenciando al id en la tabla users
             $table->unsignedBigInteger('user_id'); // aca se crea la columna y arriba se asigna el valor
+            $table->foreign('servicio_id')->reference('id')->on('servicios');   //se crea columna user id referenciando al id en la tabla users
+            $table->unsignedBigInteger('servicio_id'); // aca se crea la columna y arriba se asigna el valor
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreatePostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post');
+        Schema::dropIfExists('user_servicio');
     }
 }
