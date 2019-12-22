@@ -116,6 +116,10 @@ font-size: 20px;
   text-decoration: none;
   display: block;
 }
+#color{
+  background-color:  #343a40!important;
+  color: rgba(255,255,255,.5);
+}
 .dropdown-content a:hover {
   background-color: #908E8E
 }
