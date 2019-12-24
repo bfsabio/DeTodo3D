@@ -74,4 +74,16 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+    protected function modifica(array $data)
+    {
+        return User::modifica([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'cod_pais' => $data['cod_pais'],
+            'telefono' => $data['telefono'],
+            'password' => Hash::make($data['password']),
+        ]);
+        $data->save();
+    }
 }
