@@ -1,14 +1,49 @@
 @extends('layouts.app')
 @include('navbar')
 @section('content')
+<head>
+  <script src="js/cargarAjax.js"></script>
+  <style type="text/css">
+		#Errores{
+			background-color: red;
+			color: black;
+			font-weight: bold;
+			display: none;
+			font-style: italic;
+			padding: 40px;
+		}
+		#Exitoso{
+			background-color: green;
+			color: black;
+			font-weight: bold;
+			display: none;
+			font-style: italic;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="Errores">
+  Errores
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('registro') }}</div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" id="formulario">
                         @csrf
+                      <div  id="primeraParte"> <!-- pais  este dato no se guardara-->
+                          <label for="s-selectPaises">Pais</label>
+                          <select id="s-selectPaises">
+                          </select>
+                          <span>solo disponible en argentina</span>
+                          <br>
+                          <button type="button" id="btn-siguienteSeccion">Siguiente</button>
+                      </div>
+                      <div id="segundaParte">  <!-- formulario standar -->
                         <div class="form-group row"> <!-- name -->
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
                             <div class="col-md-6">
@@ -32,14 +67,33 @@
                             </div>
                         </div>
                         <div class="form-group row"> <!-- Pais -->
-                                <label for="pais" class="col-md-4 col-form-label text-md-right">{{ __('Pais') }}</label>
+                                <label for="s-provincia" class="col-md-4 col-form-label text-md-right">{{ __('Pais') }}</label>
                                 <div class="col-md-6">
-                                    <!-- <input id="pais" type="text" class="form-control @error('name') is-invalid @enderror" name="pais" value="{{ old('pais') }}" required autocomplete="pais" autofocus> -->
+                                  <!-- <select name="cod_pais" id="s-provincia">
+                              		</select> -->
                                     <select name="cod_pais" id="cod_pais">
                                         @foreach ($paises ?? '' as $cod_pais => $pais)
                                             <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
                                         @endforeach
                                     </select>
+                                    <span>solo diponible en argentina</span>
+                                    @error('pais')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                        </div>
+                        <div class="form-group row"> <!-- provincia  este no se guardara-->
+                                <label for="s-provincia" class="col-md-4 col-form-label text-md-right">{{ __('provincia') }}</label>
+                                <div class="col-md-6">
+                                  <select name="cod_pais" id="s-provincia">
+                              		</select>
+                                    <!-- <select name="cod_pais" id="cod_pais">
+                                        @foreach ($paises ?? '' as $cod_pais => $pais)
+                                            <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
+                                        @endforeach
+                                    </select> -->
                                     @error('pais')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -82,10 +136,13 @@
                                 </button>
                             </div>
                         </div>
+                      </div>
                     </form>
+                    <div id="Exitoso">Registro Exitoso</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+</body>
