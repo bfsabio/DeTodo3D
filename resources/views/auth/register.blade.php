@@ -37,7 +37,10 @@
                         @csrf
                       <div  id="primeraParte"> <!-- pais  este dato no se guardara-->
                           <label for="s-selectPaises">Pais</label>
-                          <select id="s-selectPaises">
+                          <select name="cod_pais" id="cod_pais">
+                              @foreach ($paises ?? '' as $cod_pais => $pais)
+                                  <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
+                              @endforeach
                           </select>
                           <span>solo disponible en argentina</span>
                           <br>
@@ -66,24 +69,6 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="form-group row"> <!-- Pais -->
-                                <label for="s-provincia" class="col-md-4 col-form-label text-md-right">{{ __('Pais') }}</label>
-                                <div class="col-md-6">
-                                  <!-- <select name="cod_pais" id="s-provincia">
-                              		</select> -->
-                                    <select name="cod_pais" id="cod_pais">
-                                        @foreach ($paises ?? '' as $cod_pais => $pais)
-                                            <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
-                                        @endforeach
-                                    </select>
-                                    <span>solo diponible en argentina</span>
-                                    @error('pais')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                        </div>
                         <div class="form-group row"> <!-- provincia  este no se guardara-->
                                 <label for="s-provincia" class="col-md-4 col-form-label text-md-right">{{ __('provincia') }}</label>
                                 <div class="col-md-6">
@@ -94,6 +79,18 @@
                                             <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
                                         @endforeach
                                     </select> -->
+                                    @error('pais')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                        </div>
+                        <div class="form-group row"> <!-- provincia  este no se guardara-->
+                                <label for="s-provincia" class="col-md-4 col-form-label text-md-right">{{ __('cuidad') }}</label>
+                                <div class="col-md-6">
+                                  <select id="s-ciudad">
+                              		</select>
                                     @error('pais')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
