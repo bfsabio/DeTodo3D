@@ -48,55 +48,18 @@ Route::get('registrar',function(){
   $paises= App\User::getPaises();
   return view('auth.register',['paises'=>$paises]);
 });
+
+
+///////////////////////////solo administrador//////////////////////////////////
+Route::group([
+    'middleware' => 'admin',
+    'prefix' => 'admin',
+    'namespace' => 'Admin'
+], function () {
+    Route::get('/pagina1',function(){
+      return view('faq');
+    });
+});
+
+///////////////////////////////////////////////////////////////////////////////
 Auth::routes();
-//
-// Route::get('logout', function () {
-//     // return view('welcome');
-//     return view('homes');
-// });
-//
-// Route::get('login', function () {
-//     // en esta ruta login
-//     return view('login');
-// });
-//
-
-//
-//
-// Route::get('inicio', function () {
-//     // en esta ruta faq
-//     return view('inicio');
-// });
-// // ruta estando logueado
-// Route::get('logueado/inicio/{name}', function ($name) {
-//     // en esta ruta incio
-//     return "ruta a inicio de $name";
-// });
-// inicio contiene la navbar modificada, seleccion de proovedores preestablecida se deve hacer con java.
-// al no estar en esa instancia se opta por modificacion alterna de vista de 5 imagenes con botones hasta poder estar en la instancia requerida
-
-// Route::get('logueado/incio/{name}/configuraciones', function ($name) {
-//     // en esta ruta configuraciones
-//     return "ruta a configuraciones";
-// });
-// Route::get('foo',function(){
-//   return view('home');
-// });
-// Route::get('/usuarios/{id}'{
-//   return "usuarios";
-// })
-// Route::get('/resultado/{numero}', function($numero){
-//   if ($numero) {
-//     // code...
-//   }
-// })
-// Route::get('/{name}', function ($name) {
-//   return 'Hola ' . $name;
-// } );
-// Route::get('post/{post_id}/comments/{coment_id?}',function($post_id,$coment_id=null){
-//   id ($coment_id !== null){
-//     return $comment_id;
-//   }else {
-//     return 'no hay comentarios';
-//   }
-// });
