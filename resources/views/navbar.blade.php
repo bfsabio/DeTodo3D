@@ -25,10 +25,15 @@
             <li  class="nav-item"><a id="text1" class="nav-link @if(Request::is('register'))disabled @endif" href="registrar">Registrarse</a></li>
             <li  class="nav-item"><a id="text2" class="nav-link @if(Request::is('faq'))disabled @endif" href="faq">Faq</a></li>
           </ul>
-          <section>
-            <button class="tema" id="tema">estilo</button>
-          </section>
+
+          <div class="">
+            <button class="tema" id="tema">cambiar tema</button>
+            <button class="tema" id="tema2">volver al original</button>
+          </div>
+
+
           <form class="form-inline my-2 my-lg-0">
+
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
