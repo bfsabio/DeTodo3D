@@ -59,6 +59,9 @@ Route::group([
     Route::get('/admin',function(){
       return view('administrador');
     });
+    Route::get('/agregar/producto', function(){
+        return view('addproduct');
+    });
 });
 
 ///////////////////////////////////////////////////////////////////////////////

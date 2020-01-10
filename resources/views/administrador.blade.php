@@ -17,6 +17,12 @@
     @include('logueado')
   </header>
   <h1>perfil adminsitrador</h1>
-
+  <div class="container">
+    <div class="row ">
+      <div class="">
+        <button><a href="agregar/producto">Agregar Producto</a></button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
