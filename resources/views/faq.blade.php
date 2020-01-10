@@ -14,15 +14,14 @@
       <link rel="stylesheet" href="{{  asset('css/logueado.css') }}" type="text/css">
   <body>
     <header>
-          <!-- Authentication Links -->
+          <!-- consulta si esta logueado o no -->
           @guest
             @include('navbar');
           @else
             @include('logueado');
           @endguest
-          </ul>
     </header>
-        <div class="container">
+    <div class="container">
         <details>
         <summary>¿Cual es el compromiso del proyecto?</summary>
              <p>Proyectamos crear una comunidad de colaboración mutua destinada a todo tipo de asistencias y manufacturas necesarias, en la impresión 3D. Debido a la ascendencia a fabricar y crear resoluciones de las mismas, la comunidad  necesitaba de un sitio completo de comercialización,  transacción & el  impulso de servicios orientado a suplir las necesidades que el sector demanda.</p>
@@ -71,26 +70,19 @@
         </details>
         <details>
           <summary>¿consultas?</summary>
-        <form action="envia.php" method="post" class="form-consulta">
-  <div>
-    <label><span>*</span>
-			<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
-		</label>
-</div>
-<div>
-		<label><span>*</span>
-			<input type="email" name="email" placeholder="Email" class="campo-form" required>
-		</label>
-</div>
-<div>
-		<label>
-			<textarea name="consulta" placeholder="consultas" class="campo-form"></textarea>
-		</label>
-</div>
-		<input type="submit" value="Enviar" class="btn-form">
-
-  </details>
-	</form>
-  </div>
+          <form action="envia.php" method="post" class="form-consulta">
+          <div>
+            <label><input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required></label>
+          </div>
+          <div>
+		        <label><input type="email" name="email" placeholder="Email" class="campo-form" required></label>
+          </div>
+          <div>
+		        <label><textarea name="consulta" placeholder="consultas" class="campo-form"></textarea></label>
+          </div>
+		        <input type="submit" value="Enviar" class="btn-form">
+          </form>
+        </details>
+      </div>
   </body>
 </html>

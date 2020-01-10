@@ -23,7 +23,6 @@
 	</style>
 </head>
 <body>
-
 <div id="Errores">
   Errores
 </div>

@@ -19,6 +19,13 @@
           </div>
           <div class="text-center col-md-4 texto">
             <h1>RIOT3D</h1> <!-- PHP EMBEBIDO DONDE SE MUESTRE EL NOMBRE DE LA EMPRESA -->
+            <div class="" style="margin-top:28%;">
+              <a href="#"> <img src="iconos/clasic2.png" alt="whatsapp icon" height=60px;> </a>
+              <a href="#"> <img src="iconos/clasic4.png" alt="email icon" height=60px;> </a>
+              <a href="#"> <img src="iconos/clasic5.png" alt="facebook icon" height=60px;> </a>
+              <a href="#"> <img src="iconos/clasic7.png" alt="instagram icon" height=60px;> </a>
+              <a href="#"> <img src="iconos/clasic6.png" alt="compartir icon" height=60px;> </a>
+            </div>
           </div>
           <div>
             <img src="img/avatar2.png" alt="Logo de la empresa" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
@@ -37,7 +44,7 @@
         </div>
         <div class="row text-center texto">
           <div class="col-md-12 texto">
-            <p>todo lo que tenga que ver insumos para la impresión, nozel,filamentos,motores y etc.<br> </p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
+            <p>todo lo que tenga que ver  en insumos para la impresión 3D, nozel,filamentos,motores y etc.<br> </p> <!-- PHP EMBEBIDO DONDE SE MUESTREN LOS DETALLES -->
           </div>
         </div>
       </div>
@@ -46,6 +53,7 @@
       <br><br>
       <section id="imagenes">
       <div class="container col-md-12">
+        <h1>productos</h1>
         <div class="row text-center">
           <div class="col-md-3 imagenes">
             <img src="img/insumos.jpg" alt="empresa" width="200" height="200">  <!-- PHP EMBEBIDO DONDE SE MUESTRE 1 imagen -->

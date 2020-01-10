@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>DeTodo3D</title>
-    <script src="js/cargarAjax.js"></script>
+
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,5 +40,6 @@
         </div>
       </nav>
           <script src="js/tema.js"></script>
+          <script src="js/cargarAjax.js"></script>
     </body>
   </html>

@@ -19,6 +19,13 @@
            </div>
            <div class="text-center col-md-4 texto">
              <h1>SUPORTTEAM3D</h1> <!-- PHP EMBEBIDO DONDE SE MUESTRE EL NOMBRE DE LA EMPRESA -->
+             <div class="" style="margin-top:28%;">
+               <a href="#"> <img src="iconos/clasic2.png" alt="whatsapp icon" height=60px;> </a>
+               <a href="#"> <img src="iconos/clasic4.png" alt="email icon" height=60px;> </a>
+               <a href="#"> <img src="iconos/clasic5.png" alt="facebook icon" height=60px;> </a>
+               <a href="#"> <img src="iconos/clasic7.png" alt="instagram icon" height=60px;> </a>
+               <a href="#"> <img src="iconos/clasic6.png" alt="compartir icon" height=60px;> </a>
+             </div>
            </div>
            <div class="col-md-4">
              <img src="img/serviciotenico.png" alt="Logo del reparacion" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->

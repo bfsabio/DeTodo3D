@@ -6,7 +6,6 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-
       @if(Auth::user()->name == 'admin')
       <div class="card-body ">
         <li><a class="adminadmins" href="admin/pagina1">Cuenta Administrador</a></li>
@@ -19,10 +18,6 @@
           Bienvenido {{ Auth::user()->name }} <span class="caret"></span>
       </div>
       @endif
-
-
-
-
         <li class="nav-item dropdown" style="right: 66px;padding: 20px;">
         <a id="navbarDropdown" tyle="" class="nav-link dropdown-toggle"  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>{{ Auth::user()->name }}<span class="caret"></span></a>
         <div class="dropdown-menu " style=" right: 20px;"  aria-labelledby="navbarDropdown">
