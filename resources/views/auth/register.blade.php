@@ -32,7 +32,7 @@
             <div class="card">
                 <div class="card-header">{{ __('registro') }}</div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" id="formulario">
+                    <form method="POST"    action="{{ route('register') }}"   enctype="multipart/form-data"  id="formulario">
                         @csrf
                       <div  id="primeraParte"> <!-- pais  este dato no se guardara-->
                           <label for="s-selectPaises">Pais</label>
@@ -68,16 +68,31 @@
                                 @enderror
                             </div>
                         </div>
+
+                        <div class="form-group row"> 
+                            <label for="avatar" class="col-md-4 col-form-label text-md-right"></label>
+                            <div class="col-md-6">
+                                <input id="avatar" type="file" class="form-controlr" name="avatar" value="" >
+                               
+                            </div>
+                        </div>
+
+
+
+
+
+
+
                         <div class="form-group row"> <!-- provincia  este no se guardara-->
                                 <label for="s-provincia" class="col-md-4 col-form-label text-md-right">{{ __('provincia') }}</label>
                                 <div class="col-md-6">
                                   <select name="cod_pais" id="s-provincia">
                               		</select>
-                                    <!-- <select name="cod_pais" id="cod_pais">
-                                        @foreach ($paises ?? '' as $cod_pais => $pais)
+                                     <select name="cod_pais" id="cod_pais">
+                                         @foreach ($paises ?? '' as $cod_pais => $pais)
                                             <option value="{{$cod_pais}}" {{ (old("pais")== $cod_pais) ? "selected" : ""}}> {{$pais}}</option>
-                                        @endforeach
-                                    </select> -->
+                                        @endforeach 
+                                    </select> 
                                     @error('pais')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

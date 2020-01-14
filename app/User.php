@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -30,7 +30,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = ['name','email','password','cod_pais', 'telefono'];
+    protected $fillable = ['name','email','password','cod_pais', 'telefono' , 'avatar'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -49,6 +49,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function getUrlPathAttribute()
+    {
+    
+    return Storage::url($this->avatar);
+    }
+
+
+
+
 
     public function posteos(){
       return $this->hasMany('App\Posteo');//,'posteos','user_id','id');

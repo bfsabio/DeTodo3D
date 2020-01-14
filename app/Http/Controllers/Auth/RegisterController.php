@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use App\Providers\RouteServiceProvider;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -55,6 +55,7 @@ class RegisterController extends Controller
             'cod_pais' => ['required', 'string'],
             'telefono' => ['required', 'integer'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'avatar'=>['image', 'max:2048'] 
         ]);
     }
 
@@ -72,6 +73,7 @@ class RegisterController extends Controller
             'cod_pais' => $data['cod_pais'],
             'telefono' => $data['telefono'],
             'password' => Hash::make($data['password']),
+            'avatar' =>  $data['avatar']->store('public'),
         ]);
     }
 
