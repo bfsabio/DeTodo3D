@@ -49,9 +49,11 @@
       </div>
 
       <div class="card-body">
+      
           <form method="POST" action="{{ route('user.update',$user) }}">
               @csrf
               @method("PATCH")
+              <input value="{{$user->id }}" name="id" style="display:none"></input>
               <div class="form-group row">  <!-- name -->
                   <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
@@ -81,7 +83,7 @@
               <div class="form-group row"> <!-- Telefono -->
                       <label for="telefono" class="col-md-4 col-form-label text-md-right">{{ __('Telefono') }}</label>
                       <div class="col-md-6">
-                          <input id="telefono" type="text" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" required autocomplete="telefono" autofocus>
+                          <input id="telefono" type="text" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ $user->telefono }}" required autocomplete="telefono" autofocus>
                           @error('telefono')
                               <span class="invalid-feedback" role="alert">
                                   <strong>{{ $message }}</strong>

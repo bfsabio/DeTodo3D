@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PerfilesController extends Controller
 {
   public function update(User $user){
-        $user = User::find();
+        $user = User::find($id);
         $this->validate($request,[
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
