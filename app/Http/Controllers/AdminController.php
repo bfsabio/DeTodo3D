@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Servicio;
 
 class AdminController extends Controller
 {
@@ -11,6 +12,6 @@ class AdminController extends Controller
             'servicio' => $req->name,
             'descripcion' =>$req->desc,
         ]);
+        return view('addproduct');
     }
-    
 }

@@ -64,5 +64,7 @@ Route::group([
     });
 });
 
+Route::post('producto','AdminController@addproduct');
+
 ///////////////////////////////////////////////////////////////////////////////
 Auth::routes();

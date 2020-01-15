@@ -19,7 +19,7 @@
     @include('logueado')
   </header>
   <div class="container">
-  <form action="/">
+  <form action="/producto" enctype="multipart/form-data" method="post">
   @csrf
     <div class="row">
         <div class="col">
@@ -45,7 +45,17 @@
                 </div>
             </div>
         </div>
-      </form>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <button type="sumbit">agregar</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
   </div>
 
 </div>
