@@ -11,6 +11,10 @@
 |
 */
 
+Route::resource('/home', 'ArticuloController');
+
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', function () {
     return view('homes'); // return view('welcome');

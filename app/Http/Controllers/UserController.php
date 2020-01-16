@@ -11,14 +11,33 @@ class UserController extends Controller
   {
       $this->middleware('auth');
   }
+
+  public function index() {
+
+
+
+
+    return view('home', ['titulo' => 'hola mundo']);
+  }
+
+
+
   public function edit(){
+
     $user = Auth::user();
+    
     return view('auth.edit',[
       "user"=>$user
     ]);
   }
 
-  public function index() {
-    return view('home', ['titulo' => 'hola mundo']);
-  }
+ public function update(){
+
+
+  
+
+
+
+ }
+ 
 }
