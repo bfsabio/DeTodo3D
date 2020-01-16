@@ -30,8 +30,8 @@ Route::get('/user/selecciondeclase', function () {
 });
 Route::get('/user/edit',"UserController@edit");
 Route::patch('/user/{user}/update',"UserController@update")->name('user.update');
-Route::get('perfil2', function () {
-    return view('perfil2');
+Route::get('perfil', function () {
+    return view('perfil');
 });
 Route::get('diseño', function () {
     return view('servicio');
