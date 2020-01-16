@@ -13,7 +13,7 @@ class CreateUserServicioTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_servicio', function (Blueprint $table) {
+        Schema::create('user_servicios', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id'); // aca se crea la columna y arriba se asigna el valor
             $table->foreign('user_id')->reference('id')->on('users');   //se crea columna user id referenciando al id en la tabla users
@@ -30,6 +30,6 @@ class CreateUserServicioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_servicio');
+        Schema::dropIfExists('user_servicios');
     }
 }

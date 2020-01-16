@@ -13,12 +13,12 @@ class CreatePosteoTable extends Migration
      */
     public function up()
     {
-        Schema::create('posteo', function (Blueprint $table) {
+        Schema::create('posteos', function (Blueprint $table) {
           $table->bigIncrements('id');
           $table->string('name');
           $table->text('descripcion');
-          $table->unsignedBigInteger('user_id'); // aca se crea la columna y arriba se asigna el valor
           $table->foreign('user_id')->reference('id')->on('users');   //se crea columna user id referenciando al id en la tabla users
+          $table->unsignedBigInteger('user_id'); // aca se crea la columna y arriba se asigna el valor
           $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreatePosteoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posteo');
+        Schema::dropIfExists('posteos');
     }
 }
