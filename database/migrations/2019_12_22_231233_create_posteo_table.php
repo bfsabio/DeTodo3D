@@ -17,8 +17,8 @@ class CreatePosteoTable extends Migration
           $table->bigIncrements('id');
           $table->string('name');
           $table->text('descripcion');
-          $table->foreign('user_id')->reference('id')->on('users');   //se crea columna user id referenciando al id en la tabla users
           $table->unsignedBigInteger('user_id'); // aca se crea la columna y arriba se asigna el valor
+          $table->foreign('user_id')->reference('id')->on('users');   //se crea columna user id referenciando al id en la tabla users
           $table->timestamps();
         });
     }
