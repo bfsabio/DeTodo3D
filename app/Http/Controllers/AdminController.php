@@ -12,6 +12,7 @@ class AdminController extends Controller
             'servicio' => $req->name,
             'descripcion' =>$req->desc,
         ]);
-        return view('addproduct');
+        $product->save();
+        return redirect ('/admin/agregar/producto');
     }
 }

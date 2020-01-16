@@ -59,6 +59,8 @@
   </div>
 
 </div>
-
+@if(isset($requ))
+@dd($product)
+@endif
 </body>
 </html>
