@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="container">
             <div class="col">
                 <div>
                     <button type="sumbit">agregar</button>
