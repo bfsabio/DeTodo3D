@@ -28,5 +28,6 @@ class AddPrecioToServicios extends Migration
     {
         Schema::table('servicios', function (Blueprint $table) {
 
+    	});
     }
 }
