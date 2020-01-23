@@ -11,6 +11,8 @@ class AdminController extends Controller
         $product = new Servicio([
             'servicio' => $req->name,
             'descripcion' =>$req->desc,
+            'precio' =>$req->precio,
+            'imagen' =>$req->img,
         ]);
         $product->save();
         return redirect ('/admin/agregar/producto');
