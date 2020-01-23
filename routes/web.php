@@ -56,10 +56,15 @@ Route::group([
     'prefix' => 'admin',
     'namespace' => 'Admin'
 ], function () {
-    Route::get('/pagina1',function(){
-      return view('faq');
+    Route::get('/admin',function(){
+      return view('administrador');
+    });
+    Route::get('/agregar/producto', function(){
+        return view('addproduct');
     });
 });
+
+Route::post('producto','AdminController@addproduct');
 
 ///////////////////////////////////////////////////////////////////////////////
 Auth::routes();

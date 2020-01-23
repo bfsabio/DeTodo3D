@@ -8,7 +8,7 @@
     <ul class="navbar-nav mr-auto">
       @if(Auth::user()->name == 'admin')
       <div class="card-body ">
-        <li><a class="adminadmins" href="admin/pagina1">Cuenta Administrador</a></li>
+        <li><a class="adminadmins" href="admin/admin">Cuenta Administrador</a></li>
       </div>
       @else
       <div class="card-body" style="color: #d1d1d4;">

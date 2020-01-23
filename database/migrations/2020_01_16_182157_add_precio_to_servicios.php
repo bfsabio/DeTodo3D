@@ -27,7 +27,6 @@ class AddPrecioToServicios extends Migration
     public function down()
     {
         Schema::table('servicios', function (Blueprint $table) {
-            Schema::dropIfExists('servicios');
-        });
+
     }
 }

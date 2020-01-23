@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class NombreDeMigracion extends Migration
+class AddImagenToServicios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,10 @@ class NombreDeMigracion extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('servicios', function (Blueprint $table) {
+            $table->string('imagen')
+            ->before('created_at');
+        });
     }
 
     /**
@@ -23,6 +26,8 @@ class NombreDeMigracion extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('servicios', function (Blueprint $table) {
+            //
+        });
     }
 }
