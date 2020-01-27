@@ -47,13 +47,6 @@ class UserController extends Controller
     return redirect('/user/edit');
   }
 
- public function update(){
 
-
-  
-
-
-
- }
  
 }
