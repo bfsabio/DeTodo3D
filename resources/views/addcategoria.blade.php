@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +18,12 @@
     @include('logueado')
   </header>
   <div class="container">
-  <form action="/producto" enctype="multipart/form-data" method="post">
+  <form action="/categoria" enctype="multipart/form-data" method="post">
   @csrf
     <div class="row">
         <div class="col">
             <div class="row">
-                <h1>Agregar Producto</h1>
+                <h1>Agregar Categoria</h1>
             </div>
             <div class="row titulosadd">
                 <div class="">
@@ -33,36 +32,18 @@
                 </div>
                 <div class="">
                     <h2>Descripcion</h2>
-                    <input name="desc" type="text">    
-                </div>
-                <div class="">
-                    <h2>Precio</h2>
-                    <input name="precio" type="number">    
-                </div>
-                <div class="">
-                    <h2>Imagen</h2>
-                    <input name="img" type="file">
-                </div>
-                <div class="">
-                    <h2>Categoria</h2>
-                    <select  name="categoria" type="">
-                        <option value="">elige una categoria</option>
-                        @foreach ($categorias as $categoria)
-                            <option value="{{$categoria->name}}">{{$categoria->name}}</option>
-                        @endforeach
-                    </select>    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <button type="sumbit">agregar</button>
-                        <button type="reset">Reset</button>
-                    </div>
+                    <textarea name="desc" id="" cols="30" rows="5"></textarea>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="col">
+                <div>
+                    <button type="sumbit">agregar</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
     </form>
   </div>
 </div>

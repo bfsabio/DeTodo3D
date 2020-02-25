@@ -20,7 +20,7 @@
   <div class="container">
     <div class="row ">
       <div class="">
-        <button><a href="agregar/producto">Agregar Producto</a></button>
+        <button><a href="admin/agregar/producto">Agregar Producto</a></button>
       </div>
     </div>
   </div>
