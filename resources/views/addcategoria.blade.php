@@ -22,7 +22,7 @@
   @csrf
     <div class="row">
         <div class="col">
-            <div class="row">
+            <div class="row fond2">
                 <h1>Agregar Categoria</h1>
             </div>
             <div class="row titulosadd">
@@ -38,9 +38,16 @@
         </div>
         <div class="container">
             <div class="col">
-                <div>
-                    <button type="sumbit">agregar</button>
-                    <button type="reset">Reset</button>
+                <div class="row">
+                    <div class="boton2" >
+                        <button type="sumbit">agregar</button>
+                    </div>
+                    <div class="boton2" >
+                        <button type="reset">Reset</button>
+                    </div>
+                    <div class="boton" >
+                        <li type="none"><a class="set2"  href="../ ">Volver</a></li>
+                    </div>
                 </div>
             </div>
         </div>
