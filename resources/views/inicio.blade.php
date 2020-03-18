@@ -48,13 +48,13 @@
                   </a>
                   <div class="textbanner">Reparacion</div>
               </div>
-              <div id="insumos" class="banner col-6 col-sm-2 col-md-2">
+             {{--  <div id="insumos" class="banner col-6 col-sm-2 col-md-2">
                   <a href="insumos" class="item-link" title="insumos">
                   <figure style="width: 150px;"> <img src="https://1.bp.blogspot.com/-8XEnoKIBiFY/XdsuOdVprqI/AAAAAAAAeJo/eMxNkd6KK_YoakwShm7sQDimtJ1YYpw6QCNcBGAsYHQ/s1600/ico_3.png"
                   width="150" height="150" alt=""></figure>
                   </a>
                   <div class="textbanner">Insumos</div>
-              </div>
+              </div> --}}
               <div id="otros" class="banner col-6 col-sm-2 col-md-2">
                   <a href="otros" class="item-link" title="otros">
                   <figure style="width: 150px;"> <img src="https://1.bp.blogspot.com/-7eqqDxB9bL8/Xdsuda25LjI/AAAAAAAAeJ4/0QQB0jQytskTMlm7VzLvn9vdFwgpLvgCQCNcBGAsYHQ/s1600/ico_5.png"
