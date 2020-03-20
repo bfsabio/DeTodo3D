@@ -58,12 +58,20 @@ Route::get('registrar',function(){
 Route::group([
     'middleware' => 'admin',
     'prefix' => 'admin',
-    'namespace' => 'Admin'
 ], function () {
-    Route::get('/pagina1',function(){
-      return view('faq');
+    Route::get('/',function(){
+      return view('administrador');
+    });
+    Route::get('/agregar/producto','AdminController@showCategoria');
+    
+    Route::get('/agregar/categoria', function(){
+        return view('addcategoria');
     });
 });
+Route::get('/mostrar/producto','AdminController@showproduct');
 
+Route::post('producto','AdminController@addproduct');
+
+Route::post('categoria','AdminController@agregarCategoria');
 ///////////////////////////////////////////////////////////////////////////////
 Auth::routes();

@@ -24,7 +24,7 @@
       <div class="row text-center">
 
         <div class="col-md-2">
-          <img src="../fuentes/imagenes/perfil.png" alt="Logo del reparacion" class="img-fluid"> <!-- PHP EMBEBIDO DONDE SE MUESTRE LA IMAGEN DE LA EMPRESA -->
+          <img src="{{$user->url_path}}"  width="300px" alt="300px">
         </div>
 
         <div class="text-center col-md-2">

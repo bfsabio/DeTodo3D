@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @include('inicio')
 @section('content')
-<img src="{{$users->url_path}}"  width="300px" alt="300px">
 @endsection
 {{-- public function up()
 {
